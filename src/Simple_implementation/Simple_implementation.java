@@ -18,10 +18,9 @@ public class Simple_implementation {
 
         //Via index
         String[] arrayName = {"Value 1", "Value 2", "Value 3"};
-     
-        
-       
-        
+        System.out.println(arrayName[0]);
+        System.out.println(arrayName[1]);
+        System.out.println(arrayName[2]);
 
     }
 }
