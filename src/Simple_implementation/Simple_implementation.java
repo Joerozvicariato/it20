@@ -18,11 +18,10 @@ public class Simple_implementation {
 
         //Via index
         String[] arrayName = {"Value 1", "Value 2", "Value 3"};
-
-        //Via Loop
-        for (int i = 0; i < arrayName.length; i++) {
-            System.out.println(arrayName[i]);
-        }
+     
+        
+       
+        
 
     }
 }
