@@ -17,6 +17,9 @@ public class Display_via_for_loop {
     public static void main(String[] args) {
 
         String[] arrayName = {"Value 1", "Value 2", "Value 3"};
-
+       //Via Loop
+        for (int i = 0; i < arrayName.length; i++) {
+            System.out.println(arrayName[i]);
+        }
     }
 }
