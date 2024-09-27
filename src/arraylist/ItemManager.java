@@ -42,7 +42,10 @@ private static ArrayList<String> items = new ArrayList<>();
                 case 3:
                     updateItem();
                     break;
-               
+                case 4:
+                    findItem();
+                    break;
+                
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
@@ -84,8 +87,23 @@ private static ArrayList<String> items = new ArrayList<>();
         }
     }
 
+    private static void findItem() {
+        System.out.print("Enter item name to find: ");
+        String searchItem = scanner.nextLine();
+        boolean found = false;
+        for (int i = 0; i < items.size(); i++) {
+            if (items.get(i).equalsIgnoreCase(searchItem)) {
+                System.out.println("Item found at position " + (i + 1));
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("Item not found.");
+        }
+    }
+
 }
-      
     
     
 
