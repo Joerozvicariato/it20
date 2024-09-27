@@ -45,7 +45,12 @@ private static ArrayList<String> items = new ArrayList<>();
                 case 4:
                     findItem();
                     break;
-                
+                case 5:
+                    deleteItem();
+                    break;
+                case 6:
+                    running = false;
+                    break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
@@ -103,7 +108,23 @@ private static ArrayList<String> items = new ArrayList<>();
         }
     }
 
+    private static void deleteItem() {
+        displayItems();
+        if (!items.isEmpty()) {
+            System.out.print("Enter the number of the item to delete: ");
+            int index = scanner.nextInt() - 1;
+            scanner.nextLine(); 
+            if (index >= 0 && index < items.size()) {
+                String removedItem = items.remove(index);
+                System.out.println("Item '" + removedItem + "' deleted successfully.");
+            } else {
+                System.out.println("Invalid item number.");
+            }
+        }
+    }
+
 }
+      
     
     
 
