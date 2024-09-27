@@ -36,6 +36,9 @@ private static ArrayList<String> items = new ArrayList<>();
                 case 1:
                     displayItems();
                     break;
+                case 2:
+                    insertItem();
+                    break;
                 
                 default:
                     System.out.println("Invalid choice. Please try again.");
@@ -54,4 +57,28 @@ private static ArrayList<String> items = new ArrayList<>();
         }
     }
 
-}
+    private static void insertItem() {
+        System.out.print("Enter item name to insert: ");
+        String item = scanner.nextLine();
+        items.add(item);
+        System.out.println("Item inserted successfully.");
+    }
+
+    private static void updateItem() {
+        displayItems();
+        if (!items.isEmpty()) {
+            System.out.print("Enter the number of the item to update: ");
+            int index = scanner.nextInt() - 1;
+            scanner.nextLine(); // Consume newline
+            if (index >= 0 && index < items.size()) {
+                System.out.print("Enter new item name: ");
+                String newItem = scanner.nextLine();
+                items.set(index, newItem);
+                System.out.println("Item updated successfully.");
+            } else {
+                System.out.println("Invalid item number.");
+            }
+        }
+    }
+
+   
