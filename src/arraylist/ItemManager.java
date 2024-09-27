@@ -32,6 +32,26 @@ private static ArrayList<String> items = new ArrayList<>();
 
              int choice = scanner.nextInt();
             scanner.nextLine();
+           switch (choice) {
+                case 1:
+                    displayItems();
+                    break;
+                
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        }
+        System.out.println("Thank you for using Item Manager!");
+    }     
+       private static void displayItems() { 
+        if (items.isEmpty()) {
+            System.out.println("No items to display.");
+        } else {
+            System.out.println("Items:");
+            for (int i = 0; i < items.size(); i++) {
+                System.out.println((i + 1) + ". " + items.get(i));
+            }
         }
     }
+
 }
