@@ -39,7 +39,10 @@ private static ArrayList<String> items = new ArrayList<>();
                 case 2:
                     insertItem();
                     break;
-                
+                case 3:
+                    updateItem();
+                    break;
+               
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
@@ -81,4 +84,8 @@ private static ArrayList<String> items = new ArrayList<>();
         }
     }
 
-   
+}
+      
+    
+    
+
