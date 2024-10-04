@@ -11,5 +11,13 @@ package topic_2_linkedlist_string;
  * @author asus
  */
 public class Node {
-    
+
+    String data;
+    Node next;
+
+    // Constructor
+    Node(String data) {
+        this.data = data;
+        this.next = null;
+    }
 }
