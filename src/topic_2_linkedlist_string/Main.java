@@ -28,7 +28,29 @@ public class Main {
             System.out.print("Enter your choice: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); 
+            scanner.nextLine();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter data to add: ");
+                    String data = scanner.nextLine();
+                    list.addNode(data);
+                    break;
+                case 2:
+                    System.out.print("Enter data to remove: ");
+                    data = scanner.nextLine();
+                    list.removeNode(data);
+                    break;
+                case 3:
+                    list.displayList();
+                    break;
+                case 4:
+                    System.out.println("Exiting...");
+                    scanner.close();
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
         }
     }
 }
