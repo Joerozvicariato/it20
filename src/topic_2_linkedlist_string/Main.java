@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package topic_2_linkedlist_string;
+
 import java.util.Scanner;
+
 /**
  *
  * @author asus
@@ -16,7 +17,18 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         LinkedList list = new LinkedList();
+        LinkedList list = new LinkedList();
         Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("\n1. Add node");
+            System.out.println("2. Remove node");
+            System.out.println("3. Display list");
+            System.out.println("4. Exit");
+            System.out.print("Enter your choice: ");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine(); 
+        }
     }
 }
