@@ -37,5 +37,15 @@ public class Stack {
             System.out.println("Stack is full. Cannot push " + value);
             return;
         }
+        stackArray[++top] = value; // Increment top and add value
+        System.out.println("Pushed " + value + " to stack.");
+    }
+
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty. Cannot peek.");
+            return -1;
+        }
+        return stackArray[top]; // Return the top element
     }
 }
