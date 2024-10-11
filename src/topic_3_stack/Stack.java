@@ -37,7 +37,7 @@ public class Stack {
             System.out.println("Stack is full. Cannot push " + value);
             return;
         }
-        stackArray[++top] = value; // Increment top and add value
+        stackArray[++top] = value;
         System.out.println("Pushed " + value + " to stack.");
     }
 
@@ -46,6 +46,14 @@ public class Stack {
             System.out.println("Stack is empty. Cannot peek.");
             return -1;
         }
-        return stackArray[top]; // Return the top element
+        return stackArray[top];
+    }
+
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty. Cannot pop.");
+            return -1;
+        }
+        return stackArray[top--];
     }
 }
