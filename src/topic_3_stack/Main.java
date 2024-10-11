@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package topic_3_stack;
-
+import java.util.Scanner;
 /**
  *
  * @author Joeroz
@@ -14,7 +14,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+         Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter the size of the stack: ");
+        int size = scanner.nextInt(); 
+        Stack stack = new Stack(size); 
+    }   
 }
