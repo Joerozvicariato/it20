@@ -9,5 +9,7 @@ package topic_3_stack;
  * @author Joeroz
  */
 public class Stack {
-    
+     private int maxSize; 
+    private int[] stackArray; 
+    private int top;
 }
