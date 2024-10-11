@@ -3,7 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package topic_3_stack;
+
 import java.util.Scanner;
+
 /**
  *
  * @author Joeroz
@@ -14,9 +16,22 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         Scanner scanner = new Scanner(System.in); 
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the size of the stack: ");
-        int size = scanner.nextInt(); 
-        Stack stack = new Stack(size); 
-    }   
+        int size = scanner.nextInt();
+        Stack stack = new Stack(size);
+
+        while (true) {
+            System.out.println("\nStack Operations:");
+            System.out.println("1. Push");
+            System.out.println("2. Pop");
+            System.out.println("3. Peek");
+            System.out.println("4. Check Size");
+            System.out.println("5. Exit");
+            System.out.print("Choose an operation: ");
+            int choice = scanner.nextInt(); // Get user choice
+
+        }
+
+    }
 }
