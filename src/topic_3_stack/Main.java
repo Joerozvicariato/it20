@@ -36,8 +36,13 @@ public class Main {
                     int value = scanner.nextInt();
                     stack.push(value);
                     break;
-            }
+                case 2: // Pop operation
+                    int poppedValue = stack.pop();
+                    if (poppedValue != -1) {
+                        System.out.println("Popped element: " + poppedValue);
+                    }
 
+            }
         }
     }
 }
