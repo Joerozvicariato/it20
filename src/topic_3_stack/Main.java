@@ -29,9 +29,15 @@ public class Main {
             System.out.println("4. Check Size");
             System.out.println("5. Exit");
             System.out.print("Choose an operation: ");
-            int choice = scanner.nextInt(); // Get user choice
+            int choice = scanner.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter a number to push: ");
+                    int value = scanner.nextInt();
+                    stack.push(value);
+                    break;
+            }
 
         }
-
     }
 }
