@@ -49,11 +49,15 @@ public class Main {
                         break;
 
                     }
-                case 4: 
+                case 4:
                     System.out.println("Stack size: " + stack.size());
                     break;
+
+                case 5:
+                    System.out.println("Exiting...");
+                    scanner.close();
+                    return;
             }
         }
     }
-}    
-
+}
