@@ -42,14 +42,18 @@ public class Main {
                         System.out.println("Popped element: " + poppedValue);
                     }
                     break;
-                case 3: 
+                case 3:
                     int topValue = stack.peek();
                     if (topValue != -1) {
                         System.out.println("Top element: " + topValue);
                         break;
 
                     }
+                case 4: 
+                    System.out.println("Stack size: " + stack.size());
+                    break;
             }
         }
     }
-}
+}    
+
