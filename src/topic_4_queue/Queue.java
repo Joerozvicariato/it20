@@ -5,6 +5,8 @@
  */
 
 package topic_4_queue;
+import java.util.LinkedList;
+import java.util.Scanner;
 
 /**
  *
@@ -12,10 +14,5 @@ package topic_4_queue;
  */
 public class Queue {
    
- 
+} 
 
-class Customer {
-
-}
-}
-    
