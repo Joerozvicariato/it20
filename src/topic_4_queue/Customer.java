@@ -8,8 +8,11 @@ package topic_4_queue;
 
 /**
  *
- * @author joeroz
+ * @author 
  */
 public class Customer {
 
+    private String name;
+
 }
+
