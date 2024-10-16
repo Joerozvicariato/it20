@@ -20,6 +20,14 @@ public class StackCalculator extends JFrame implements ActionListener {
         setupDisplay();
         setupButtons();
     }
+  // Setup frame properties
+    private void setupFrame() {
+        setTitle("Stack Calculator");
+        setSize(300, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout(10, 10));
+        setResizable(false);
+    }
 
         @Override
         public void actionPerformed(ActionEvent ae) {
