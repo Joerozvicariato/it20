@@ -70,7 +70,17 @@ public class StackCalculator extends JFrame implements ActionListener {
         // Handle arithmetic operation buttons
         else if ("+".equals(buttonText) || "-".equals(buttonText) || "*".equals(buttonText) || "/".equals(buttonText)) {
             performOperation(buttonText);
+            
+             // Method to perform the selected arithmetic operation
+             private void performOperation(String operator) {
+        if (stack.size() < 2) {
+            display.append("Error: Not enough operands\n");
+            return;
+        }
+
+        int num2 = stack.pop(); // Second operand
+        int num1 = stack.pop(); // First operand
+        int result = 0;
         }
     }
         }
-}
