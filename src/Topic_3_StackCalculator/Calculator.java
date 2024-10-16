@@ -37,12 +37,16 @@ public class StackCalculator extends JFrame implements ActionListener {
         JScrollPane scrollPane = new JScrollPane(display);
         add(scrollPane, BorderLayout.NORTH);
     }
-        @Override
-        public void actionPerformed(ActionEvent ae) {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
+    // Setup buttons for digits 0-9 and arithmetic operations
+    private void setupButtons() {
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new GridLayout(5, 3, 5, 5));
+        
+    }
 }
 }
+
+
 
 
 
