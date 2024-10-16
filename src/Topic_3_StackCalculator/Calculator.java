@@ -1,13 +1,10 @@
-
-package Topic_3_StackCalculator;
+package topic_3_StackCalculator;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Stack;
-
-public class Calculator {
 
 public class StackCalculator extends JFrame implements ActionListener {
     private Stack<Integer> stack;
@@ -20,7 +17,8 @@ public class StackCalculator extends JFrame implements ActionListener {
         setupDisplay();
         setupButtons();
     }
-  // Setup frame properties
+
+    // Setup frame properties
     private void setupFrame() {
         setTitle("Stack Calculator");
         setSize(300, 400);
@@ -28,7 +26,8 @@ public class StackCalculator extends JFrame implements ActionListener {
         setLayout(new BorderLayout(10, 10));
         setResizable(false);
     }
-      // Setup the display area
+
+    // Setup the display area
     private void setupDisplay() {
         display = new JTextArea(3, 20);
         display.setEditable(false);
@@ -37,28 +36,33 @@ public class StackCalculator extends JFrame implements ActionListener {
         JScrollPane scrollPane = new JScrollPane(display);
         add(scrollPane, BorderLayout.NORTH);
     }
+
     // Setup buttons for digits 0-9 and arithmetic operations
     private void setupButtons() {
         JPanel buttonPanel = new JPanel();
-        buttonPanel.setLayout(new GridLayout(5, 3, 5, 5));  
-    
-     // Adding buttons 0-9
+        buttonPanel.setLayout(new GridLayout(5, 3, 5, 5));
+
+        // Adding buttons 0-9
         for (int i = 0; i <= 9; i++) {
             JButton button = new JButton(String.valueOf(i));
             button.addActionListener(this);
             buttonPanel.add(button);
-            
-            
+        }
+
         // Add buttons for arithmetic operations (+, -, *, /)
         String[] operations = {"+", "-", "*", "/"};
         for (String op : operations) {
-            JButton button = new JButton(operator);
+            JButton button = new JButton(op);
             button.addActionListener(this);
             buttonPanel.add(button);
-            // Add button panel to the frame
+        }
+
+        // Add button panel to the frame
         add(buttonPanel, BorderLayout.CENTER);
-    
-         public void actionPerformed(ActionEvent e) {
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
         JButton button = (JButton) e.getSource();
         String buttonText = button.getText();
 
@@ -70,9 +74,11 @@ public class StackCalculator extends JFrame implements ActionListener {
         // Handle arithmetic operation buttons
         else if ("+".equals(buttonText) || "-".equals(buttonText) || "*".equals(buttonText) || "/".equals(buttonText)) {
             performOperation(buttonText);
-            
-             // Method to perform the selected arithmetic operation
-             private void performOperation(String operator) {
+        }
+    }
+
+    // Method to perform the selected arithmetic operation
+    private void performOperation(String operator) {
         if (stack.size() < 2) {
             display.append("Error: Not enough operands\n");
             return;
@@ -81,8 +87,8 @@ public class StackCalculator extends JFrame implements ActionListener {
         int num2 = stack.pop(); // Second operand
         int num1 = stack.pop(); // First operand
         int result = 0;
-        
-           switch (operator) {
+
+        switch (operator) {
             case "+":
                 result = num1 + num2;
                 break;
@@ -107,13 +113,14 @@ public class StackCalculator extends JFrame implements ActionListener {
         display.append(num1 + " " + operator + " " + num2 + " = " + result + "\n");
     }
 
+    /**
+     * Main method to launch the calculator.
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            StackCalculatorcalculator = new StackCalculator();
+            StackCalculator calculator = new StackCalculator();
             calculator.setVisible(true);
         });
     }
 }
-        }
-    
-        
