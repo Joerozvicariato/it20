@@ -52,17 +52,25 @@ public class StackCalculator extends JFrame implements ActionListener {
         // Add buttons for arithmetic operations (+, -, *, /)
         String[] operations = {"+", "-", "*", "/"};
         for (String op : operations) {
-            JButton button = new JButton(op);
+            JButton button = new JButton(operator);
             button.addActionListener(this);
             buttonPanel.add(button);
+            // Add button panel to the frame
+        add(buttonPanel, BorderLayout.CENTER);
+    
+         public void actionPerformed(ActionEvent e) {
+        JButton button = (JButton) e.getSource();
+        String buttonText = button.getText();
+
+        // Handle number button presses
+        if (Character.isDigit(buttonText.charAt(0))) {
+            stack.push(Integer.parseInt(buttonText));
+            display.append(buttonText + "\n");
+        } 
+        // Handle arithmetic operation buttons
+        else if ("+".equals(buttonText) || "-".equals(buttonText) || "*".equals(buttonText) || "/".equals(buttonText)) {
+            performOperation(buttonText);
         }
-        }
+    }
         }
 }
-}
-
-
-
-
-
-
