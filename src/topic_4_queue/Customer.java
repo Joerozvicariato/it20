@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package topic_4_queue;
 
 /**
  *
- * @author
+ * @author 
  */
 public class Customer {
 
@@ -21,4 +22,9 @@ public class Customer {
         return name;
     }
 
+    @Override
+    public String toString() {
+        return name;
+    }
 }
+
