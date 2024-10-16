@@ -81,6 +81,28 @@ public class StackCalculator extends JFrame implements ActionListener {
         int num2 = stack.pop(); // Second operand
         int num1 = stack.pop(); // First operand
         int result = 0;
+        
+           switch (operator) {
+            case "+":
+                result = num1 + num2;
+                break;
+            case "-":
+                result = num1 - num2;
+                break;
+            case "*":
+                result = num1 * num2;
+                break;
+            case "/":
+                if (num2 == 0) {
+                    display.append("Error: Division by zero\n");
+                    stack.push(num1); // Push numbers back to stack if error
+                    stack.push(num2);
+                    return;
+                }
+                result = num1 / num2;
+                break;
+        }
+
         }
     }
         }
