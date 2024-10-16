@@ -47,10 +47,20 @@ public class StackCalculator extends JFrame implements ActionListener {
             JButton button = new JButton(String.valueOf(i));
             button.addActionListener(this);
             buttonPanel.add(button);
+            
+            
+        // Add buttons for arithmetic operations (+, -, *, /)
+        String[] operations = {"+", "-", "*", "/"};
+        for (String op : operations) {
+            JButton button = new JButton(op);
+            button.addActionListener(this);
+            buttonPanel.add(button);
+        }
+        }
         }
 }
 }
-}
+
 
 
 
