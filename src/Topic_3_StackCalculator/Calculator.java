@@ -40,9 +40,15 @@ public class StackCalculator extends JFrame implements ActionListener {
     // Setup buttons for digits 0-9 and arithmetic operations
     private void setupButtons() {
         JPanel buttonPanel = new JPanel();
-        buttonPanel.setLayout(new GridLayout(5, 3, 5, 5));
-        
-    }
+        buttonPanel.setLayout(new GridLayout(5, 3, 5, 5));  
+    
+     // Adding buttons 0-9
+        for (int i = 0; i <= 9; i++) {
+            JButton button = new JButton(String.valueOf(i));
+            button.addActionListener(this);
+            buttonPanel.add(button);
+        }
+}
 }
 }
 
