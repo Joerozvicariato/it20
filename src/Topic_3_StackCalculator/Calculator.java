@@ -103,6 +103,17 @@ public class StackCalculator extends JFrame implements ActionListener {
                 break;
         }
 
-        }
+        stack.push(result);
+        display.append(num1 + " " + operator + " " + num2 + " = " + result + "\n");
     }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            StackCalculatorcalculator = new StackCalculator();
+            calculator.setVisible(true);
+        });
+    }
+}
         }
+    
+        
