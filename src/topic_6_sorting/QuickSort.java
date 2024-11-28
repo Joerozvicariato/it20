@@ -18,7 +18,7 @@ public class QuickSort {
         int pivot = arr.get(high);
         int i = low - 1;
 
-for (int j = low; j < high; j++) {
+        for (int j = low; j < high; j++) {
             if (arr.get(j) <= pivot) {
                 i++;
 
@@ -27,5 +27,10 @@ for (int j = low; j < high; j++) {
                 arr.set(j, temp);
             }
         }
+        int temp = arr.get(i + 1);
+        arr.set(i + 1, arr.get(high));
+        arr.set(high, temp);
+
+        return i + 1;
     }
 }
