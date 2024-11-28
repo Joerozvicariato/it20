@@ -37,6 +37,9 @@ public class InsertionSort {
 
             if (nums == i) {
 
+                System.out.println("Original ArrayList:");
+                System.out.println(NumsToSort);
+
             }
         }
     }
