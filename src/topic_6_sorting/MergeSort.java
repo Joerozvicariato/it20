@@ -55,6 +55,12 @@ public class MergeSort {
             int num = scan.nextInt();
             NumsToSort.add(num);
 
+            if (nums == i) {
+                System.out.println("Original ArrayList:");
+                System.out.println(NumsToSort);
+
+                mergeSort(NumsToSort);
+            }
         }
     }
 }
