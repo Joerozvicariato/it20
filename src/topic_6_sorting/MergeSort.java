@@ -18,9 +18,10 @@ public class MergeSort {
         mergeSort(left);
         mergeSort(right);
 
-      
+        merge(arr, left, right);
+    }
+
+    public static void merge(ArrayList<Integer> arr, ArrayList<Integer> left, ArrayList<Integer> right) {
+
     }
 }
-
-
-
