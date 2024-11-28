@@ -26,5 +26,9 @@ public class SelectionSort {
 
         System.out.println("Selection Sorting ");
 
+        System.out.println("How many numbers you want to sort?");
+        int nums = scan.nextInt();
+        scan.nextLine();
+
     }
 }
