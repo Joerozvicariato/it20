@@ -22,6 +22,7 @@ public class MergeSort {
     }
 
     public static void merge(ArrayList<Integer> arr, ArrayList<Integer> left, ArrayList<Integer> right) {
+        int i = 0, j = 0, k = 0;
 
     }
 }
