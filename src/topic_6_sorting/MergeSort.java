@@ -43,5 +43,12 @@ public class MergeSort {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         ArrayList<Integer> NumsToSort = new ArrayList<Integer>();
+
+        System.out.println("Merge Sorting ");
+
+        System.out.println("How many numbers you want to sort?");
+        int nums = scan.nextInt();
+        scan.nextLine();
+
     }
 }
