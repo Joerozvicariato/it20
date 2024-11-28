@@ -24,6 +24,8 @@ public class BubbleSort {
        public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         ArrayList<Integer> NumsToSort = new ArrayList<Integer>();
+       
+        System.out.println("Bubble Sorting ");
 
     }
 }
