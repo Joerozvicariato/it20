@@ -5,4 +5,7 @@ import java.util.Scanner;
 
 public class SelectionSort {
 
+    public static void selectionSort(ArrayList<Integer> arr) {
+    
+    }
 }
