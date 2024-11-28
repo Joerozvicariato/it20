@@ -6,5 +6,7 @@ import java.util.Scanner;
 public class InsertionSort {
 
     public static void insertionSort(ArrayList<Integer> arr) {
+        int n = arr.size();
+
     }
 }
