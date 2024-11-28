@@ -14,5 +14,10 @@ public class QuickSort {
         }
     }
 
+    private static int partition(ArrayList<Integer> arr, int low, int high) {
+        int pivot = arr.get(high);
+        int i = low - 1;
+
+    }
 }
 
