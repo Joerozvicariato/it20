@@ -1,4 +1,3 @@
-
 package topic_6_sorting;
 
 import java.util.ArrayList;
@@ -11,5 +10,17 @@ public class MergeSort {
             return;
         }
 
+        int mid = arr.size() / 2;
+
+        ArrayList<Integer> left = new ArrayList<>(arr.subList(0, mid));
+        ArrayList<Integer> right = new ArrayList<>(arr.subList(mid, arr.size()));
+
+        mergeSort(left);
+        mergeSort(right);
+
+      
     }
 }
+
+
+
