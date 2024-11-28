@@ -55,8 +55,10 @@ public class QuickSort {
 
                 quickSort(NumsToSort, 0, NumsToSort.size() - 1);
 
+                System.out.println("Sorted ArrayList:");
+                System.out.println(NumsToSort);
             }
-        
+
         }
     }
 }
