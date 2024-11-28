@@ -29,5 +29,8 @@ public class InsertionSort {
         int nums = scan.nextInt();
         scan.nextLine();
 
+        for (int i = 1; i <= nums; i++) {
+
+        }
     }
 }
