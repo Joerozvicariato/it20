@@ -25,5 +25,9 @@ public class InsertionSort {
 
         System.out.println("Insertion Sorting ");
 
+        System.out.println("How many numbers you want to sort?");
+        int nums = scan.nextInt();
+        scan.nextLine();
+
     }
 }
