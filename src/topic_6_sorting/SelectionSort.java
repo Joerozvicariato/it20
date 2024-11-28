@@ -40,6 +40,10 @@ public class SelectionSort {
                 System.out.println(NumsToSort);
 
                 selectionSort(NumsToSort);
+
+                System.out.println("Sorted ArrayList:");
+                System.out.println(NumsToSort);
+
             }
         }
     }
