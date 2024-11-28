@@ -39,6 +39,9 @@ public class BubbleSort {
 
             if (nums == i) {
 
+                System.out.println("Original ArrayList:");
+                System.out.println(NumsToSort);
+
             }
         }
     }
