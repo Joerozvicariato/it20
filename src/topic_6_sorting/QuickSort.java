@@ -33,4 +33,11 @@ public class QuickSort {
 
         return i + 1;
     }
+
+   public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> NumsToSort = new ArrayList<Integer>();
+
+        System.out.println("Quick Sorting ");
+   }
 }
