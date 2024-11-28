@@ -43,6 +43,20 @@ public class QuickSort {
         System.out.println("How many numbers you want to sort?");
         int nums = scan.nextInt();
         scan.nextLine();
+
+        for (int i = 1; i <= nums; i++) {
+            System.out.println("Enter the number you want to sort");
+            int num = scan.nextInt();
+            NumsToSort.add(num);
+
+            if (nums == i) {
+                System.out.println("Original ArrayList:");
+                System.out.println(NumsToSort);
+
+                quickSort(NumsToSort, 0, NumsToSort.size() - 1);
+
+            }
+        
+        }
     }
 }
-
