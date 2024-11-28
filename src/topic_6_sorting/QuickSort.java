@@ -18,6 +18,14 @@ public class QuickSort {
         int pivot = arr.get(high);
         int i = low - 1;
 
+for (int j = low; j < high; j++) {
+            if (arr.get(j) <= pivot) {
+                i++;
+
+                int temp = arr.get(i);
+                arr.set(i, arr.get(j));
+                arr.set(j, temp);
+            }
+        }
     }
 }
-
