@@ -50,5 +50,11 @@ public class MergeSort {
         int nums = scan.nextInt();
         scan.nextLine();
 
+        for (int i = 1; i <= nums; i++) {
+            System.out.println("Enter the number you want to sort");
+            int num = scan.nextInt();
+            NumsToSort.add(num);
+
+        }
     }
 }
