@@ -44,6 +44,7 @@ public class SelectionSort {
                 System.out.println("Sorted ArrayList:");
                 System.out.println(NumsToSort);
 
+                break;
             }
         }
     }
