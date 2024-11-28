@@ -45,6 +45,8 @@ public class InsertionSort {
                 System.out.println("Sorted ArrayList:");
                 System.out.println(NumsToSort);
 
+                break;
+
             }
         }
     }
