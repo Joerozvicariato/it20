@@ -37,6 +37,9 @@ public class BubbleSort {
             int num = scan.nextInt();
             NumsToSort.add(num);
 
+            if (nums == i) {
+
+            }
         }
     }
 }
