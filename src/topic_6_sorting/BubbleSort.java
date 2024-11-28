@@ -21,7 +21,7 @@ public class BubbleSort {
             }
         }
     }
-      public static void main(String[] args) {
+     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         ArrayList<Integer> NumsToSort = new ArrayList<Integer>();
 
@@ -31,5 +31,8 @@ public class BubbleSort {
         int nums = scan.nextInt();
         scan.nextLine();
 
+        for (int i = 1; i <= nums; i++) {
+
+        }
     }
 }
