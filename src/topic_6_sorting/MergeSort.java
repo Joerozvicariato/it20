@@ -31,6 +31,13 @@ public class MergeSort {
                 arr.set(k++, right.get(j++));
             }
         }
+        while (i < left.size()) {
+            arr.set(k++, left.get(i++));
+        }
 
+        while (j < right.size()) {
+            arr.set(k++, right.get(j++));
+        }
     }
+}
 }
