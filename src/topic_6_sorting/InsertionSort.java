@@ -18,4 +18,11 @@ public class InsertionSort {
             arr.set(j + 1, key);
         }
     }
-}
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> NumsToSort = new ArrayList<Integer>();
+
+    }
+    }
+
