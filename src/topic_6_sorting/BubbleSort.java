@@ -44,6 +44,9 @@ public class BubbleSort {
 
                 bubbleSort(NumsToSort);
 
+                System.out.println("Sorted ArrayList:");
+                System.out.println(NumsToSort);
+
             }
         }
     }
