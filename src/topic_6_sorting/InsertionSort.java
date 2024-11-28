@@ -23,6 +23,7 @@ public class InsertionSort {
         Scanner scan = new Scanner(System.in);
         ArrayList<Integer> NumsToSort = new ArrayList<Integer>();
 
-    }
-    }
+        System.out.println("Insertion Sorting ");
 
+    }
+}
