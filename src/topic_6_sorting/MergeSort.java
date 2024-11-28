@@ -24,5 +24,13 @@ public class MergeSort {
     public static void merge(ArrayList<Integer> arr, ArrayList<Integer> left, ArrayList<Integer> right) {
         int i = 0, j = 0, k = 0;
 
+        while (i < left.size() && j < right.size()) {
+            if (left.get(i) <= right.get(j)) {
+                arr.set(k++, left.get(i++));
+            } else {
+                arr.set(k++, right.get(j++));
+            }
+        }
+
     }
 }
